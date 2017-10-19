@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>饮食禁忌大全-济养堂</title>
+<!--   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" /> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <script src="jquery-3.2.1.slim-d.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  body { margin: 0; padding: 0;}
+/*  .input-group-lg {
+           margin-top: -10px;
+           padding-top: 20px;
+
+}*/
+.navbar {margin-bottom: 0; padding-bottom: 0;}
+button {text-align: center;}
+ </style>
+ <script type="text/javascript">
+function showHint(str)
+{
+var xmlhttp;
+if (str.length==0)
+  {
+  document.getElementById("txtHint").innerHTML="";
+  return;
+  }
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","/gethint.php?q="+str,true);
+xmlhttp.send();
+}
+
+//安卓默认
+// $(function () {
+//   var nua = navigator.userAgent
+//   var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+//   if (isAndroid) {
+//     $('select.form-control').removeClass('form-control').css('width', '100%')
+//   }
+// })
+
+
+</script>
+</head>
+<body>
+  <div>
+    <nav class ="navbar navbar-default">
+      <div class ="container-fluid">
+        <div class ="navbar-header">
+          <a style="margin: 0" class ="navbar-brand" href="http://m.1shiliao.com">
+            <img style="margin: -5px -5px 0 -5px;" alt ="Brand" src="logo.png" >
+          </a>
+          <label><p class ="navbar-text" style="width: 100%; text-indent: 1em; font-size: 22px; color: red; margin: 5px auto 0; padding-top: 5px;"><strong>吃前查一查,健康100%</strong></p></label>
+        </div>
+      </div>
+    </nav>
+  </div>
+<div class ="panel panel-info" style="margin-bottom: 0;">
+  <div class ="panel-body">
+   <div class ="input-group-lg" >
+        <div class ="center-block" style="text-align: center; margin-bottom: 0; padding-bottom: 0;">
+              <label style="margin: 0"><input type="text" class="form-control"  id="txt1" onkeyup="showHint(this.value) " aria-decribedby="basic-addon1"  placeholder="输入饮食的名称(全称更精准)" /></label>
+             <label style="margin: 0"><a tabindex="0" class="btn btn-sm btn-danger" role="button" data-toggle="popover" data-trigger="focus" data-placement="auto" title="如何查询?" data-content="在左框内输入要查询的食品或饮品的名称（无需回车或其它操作），下面小圆点后会显示与查询名称相关的禁忌事项。“+”号前后代表两种食品一起食用，“=”号后面说明会产生的禁忌危害。">如何查？</a></label>
+<!--             </div> -->
+        </div>
+      </div>
+    </div>
+ </div>
+  <div class ="panel-footer" style="margin: 0; padding-top: 0;">
+        <div class ="center-block" style="font-size: 20px; margin: 0 5px 5px 15px;">
+              <p class ="bg-info lead"><ul style="padding-left: 5%;"><li><span id="txtHint"></span></li></ul></p>
+              <div class="item">
+                <img src="jinji.jpg" alt="...">
+                <div class="carousel-caption">
+                  <h3>关于禁忌查询</h3>
+                  <p>本禁忌查询系统，信息来源均非网络搬运，而皆选自中国名老中医的著作精心节选，均有据可查。共囊括五大类：五谷类、肉蛋类、蔬菜类、水果饮品类、中药类，方便快速查询，餐桌、家庭必备在线工具。饮食前通过本系统快速，可以避免食品饮品相克产生的的病患，甚至中毒现象。</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <img src="jinji.jpg" alt="...">
+                    <div class="caption">
+                      <h3>关于禁忌查询</h3>
+                      <p style="margin:auto; padding: auto; font-size: 14px; text-indent: 2em; color:#2ABAD2;">本禁忌查询系统，信息来源均非网络搬运，而皆选自中国名老中医的著作精心节选，均有据可查。共囊括五大类：五谷类、肉蛋类、蔬菜类、水果饮品类、中药类，方便快速查询，餐桌、家庭必备在线工具。饮食前通过本系统快速，可以避免食品饮品相克产生的的病患，甚至中毒现象。</p>
+                      <p><a href="http://m.1shiliao.com" class="btn btn-primary" role="button">更多内容</a></p>
+                    </div>
+                  </div>
+                </div>
+               <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <img src="ysdbc.jpg" alt="医生都不吃的肉 你还在吃吗">
+                    <div class="caption">
+                      <h3>医生都不吃的肉你还在吃吗</h3>
+                      <p style="margin:auto; padding: auto; font-size: 14px; text-indent: 2em; color:#2ABAD2;">鸭脖，这是不是再熟悉不过的美味了?当下酒菜正合适。现在满大街的鸭脖子，各种口味随意挑选，总有一款适合您。但是，小编告诉你，这些鸭脖，无论味道如何鲜美，还真的没有一款适合你。首先，鸭的脖子根本就没有多少肉，吃鸭脖，无非是吃它的味道;其次，这里是淋巴腺集中的...</p>
+                      <p><a href="http://m.1shiliao.com/21/74/p386734491d8f2a" class="btn btn-primary" role="button">更多内容</a></p>
+                    </div>
+                  </div>
+                </div>
+               <div class="col-sm-6 col-md-4">
+                  <div class="thumbnail">
+                    <img src="px.jpg" alt="...">
+                    <div class="caption">
+                      <h3>贫血证禁忌</h3>
+                      <p style="margin:auto; padding: auto; font-size: 14px; text-indent: 2em; color:#2ABAD2;">馒头的主要原料是面粉，加水和糖等调匀后，再经发酵蒸熟而成，馒头容易被消化吸收，而且营养丰富，但是贫血患者却不宜多食，因为在制作的过程中加入了食用碱，这让成为了典型的碱性食物之一，贫血患者过多的食用碱性食物，就会在体内形成碱性的环境，从而影响人体对...</p>
+                      <p><a href="http://m.1shiliao.com/41/40/p30435747947159" class="btn btn-primary" role="button">更多内容</a></p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+<!--               <img src="jinji.jpg" class="img-rounded" style="width: 100%;margin-top: 30px;margin-bottom: 10px">
+              <p style="margin:auto; padding: auto; font-size: 14px; text-indent: 2em; color:#2ABAD2;">本禁忌查询系统，信息来源均非网络搬运，而皆选自中国名老中医的著作精心节选，均有据可查。共囊括五大类：五谷类、肉蛋类、蔬菜类、水果饮品类、中药类，方便快速查询，餐桌、家庭必备在线工具。饮食前通过本系统快速，可以避免食品饮品相克产生的的病患，甚至中毒现象。</p> -->
+        </div>
+   </div>
+  <div class ="center-block" style=" margin: 0; padding: 0;">
+       <p class ="text-center" style="background-color: #DAF1FB; margin: 0; padding: 0; color: #fff;>"><a href="http://m.1shiliao.com">济养堂 © m.1shiliao.com</a></p>
+  </div>
+
+<!-- 弹窗js -->
+<script>
+$(function () {
+  $("[data-toggle='popover']").popover();
+});
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?26f189b4db80ad7c5fa9be380b7b3426";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
+
+
