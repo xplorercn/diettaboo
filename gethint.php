@@ -1,0 +1,916 @@
+<?php
+// 用名字来填充数组
+//中药禁忌
+$a[]="阿胶&nbsp;&nbsp;&nbsp;&nbsp;+浓茶=降低功效。";
+$a[]="补骨脂&nbsp;&nbsp;&nbsp;&nbsp;+猪血=两者作用相反；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+油菜=两者性味相反。";
+$a[]="百合&nbsp;&nbsp;&nbsp;&nbsp;+猪肉=引起中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+羊肉=引起腹泻。";
+$a[]="薄荷&nbsp;&nbsp;&nbsp;&nbsp;+甲鱼=影响功效。";
+$a[]="葱&nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=导致腹泻；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+公鸡肉=助阳动火伤身。";
+$a[]="茶<br>&nbsp;&nbsp;&nbsp;&nbsp;+海带=影响钙、铁的吸收；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=容易引起便秘；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+阿胶=降低功效；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+黑木耳=不利铁的吸收；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+红小豆=（红茶）破坏铁元素的吸收；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+紫米=阻碍人体对铁质的吸收和利用；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+鱿鱼=影响蛋白质的吸收；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+鸡蛋=降低对蛋白质和铁的吸收；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+羊肉=吃羊肉后马上喝茶易引发便秘；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+猪心=容易导致便秘，影响铁的吸收；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+苹果=导致维生素流失，影响铁质的吸收；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+芦荟=（绿茶）易引起流产，影响铁质的吸收；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+猪肉=造成便秘；单宁酸阻碍铁和蛋白质的吸收、利用；</br>
+       （儿童不宜喝茶，以免摄入过量的茶单宁，影响发育成长）。";
+$a[]="冬虫夏草&nbsp;&nbsp;&nbsp;&nbsp;+金银花=功效相反；</br>
+              &nbsp;&nbsp;&nbsp;&nbsp;+燕窝=头晕。";
+$a[]="大蒜&nbsp;&nbsp;&nbsp;&nbsp;+蜜=导致腹泻。";
+$a[]="豆豉&nbsp;&nbsp;&nbsp;&nbsp;+苦瓜=钠含量过高，不适合高血压患者食用；。";
+$a[]="当归<br>&nbsp;&nbsp;&nbsp;&nbsp;+绿豆=致恶心·呕吐；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+乌冬面=影响药效；</br>
+          （当归属甘温滋补之品，月经过多、有出血倾向、阴虚内热、大便塘泄者均不宜服用，孕妇慎用）。";
+$a[]="党参&nbsp;&nbsp;&nbsp;&nbsp;+萝卜=降低药效；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+藜芦=大伤元气。";
+$a[]="蜂蜜<br>&nbsp;&nbsp;&nbsp;&nbsp;+莴笋=导致腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+韭菜=降低药效、腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+葱=导致胸闷；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+洋葱=伤害眼睛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+豆腐=导致腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲫鱼=同食会中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=引起腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+茭白=引发痼疾；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+圆白菜=降低营养价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+大米=同食易致呕吐、腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄豆=同食易腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+樱桃=阻碍营养吸收。";
+$a[]="茯苓&nbsp;&nbsp;&nbsp;&nbsp;+醋=削弱茯苓药效。";
+$a[]="枸杞<br>&nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=引起腹痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+绿茶=药性不同；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+空心菜=易腹胀、腹泻。";
+$a[]="甘草<br>&nbsp;&nbsp;&nbsp;&nbsp;+鲤鱼=导致腹痛、会中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+草鱼=易中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+猪蹄=容易引起中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+海带=对健康不利；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+海藻=使水钠潴留。";
+$a[]="干辣椒&nbsp;&nbsp;&nbsp;&nbsp;+黄瓜/南瓜=破坏维生素C。";
+$a[]="黄芩&nbsp;&nbsp;&nbsp;&nbsp;+玄参=功能相反；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=降低功效。";
+$a[]="荷叶&nbsp;&nbsp;&nbsp;&nbsp;+茯苓=药性不同。";
+$a[]="黄莲&nbsp;&nbsp;&nbsp;&nbsp;+附子=大大降低药效。";
+$a[]="何首乌<br>&nbsp;&nbsp;&nbsp;&nbsp;+铁器=古籍记载破坏药效；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+葱、蒜=古籍记载降低药效；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+萝卜=古籍记载降低药效；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=易致腹泻；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+ 猪=古籍记载降低药效；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+羊血=古籍记载降低药效。";
+$a[]="红酒<br>&nbsp;&nbsp;&nbsp;&nbsp;+醋=影响口感；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+猪肝=不利于人体对铁的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+黑木耳=不利于人体对铁的吸收。";
+$a[]="决明子&nbsp;&nbsp;&nbsp;&nbsp;+动物内脏=影响药效。";
+$a[]="姜&nbsp;&nbsp;&nbsp;&nbsp;+兔肉=导致腹泻；</br>
+    生姜&nbsp;&nbsp;&nbsp;&nbsp;+狗肉=导致腹痛。";
+$a[]="菊花<br>&nbsp;&nbsp;&nbsp;&nbsp;+人参=破坏药效；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸡肉=易致中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+猪肉=易致中毒。";
+$a[]="灵芝&nbsp;&nbsp;&nbsp;&nbsp;+浓茶=降低功效。";
+$a[]="鹿茸<br>&nbsp;&nbsp;&nbsp;&nbsp;+茶=减弱鹿茸的功效；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=减弱鹿茸的功效；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+山楂=减弱鹿茸的功效。";
+$a[]="莲子&nbsp;&nbsp;&nbsp;&nbsp;+花生=钾含量过高，肾脏不佳患者慎食。";
+$a[]="麦冬<br>&nbsp;&nbsp;&nbsp;&nbsp;+黑木耳=引起胸闷；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲫鱼=功能不协；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+款冬花=古籍记载影响药效；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+苦参=古籍记载影响药效。";
+$a[]="牛奶<br>&nbsp;&nbsp;&nbsp;&nbsp;+韭菜=影响钙的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菠萝=引起腹泻；影响消化吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+橘子=影响牛奶的消化吸收、腹胀、腹泻、腹痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+柠檬=影响牛奶的消化吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+豆腐=降低营养价值。";
+$a[]="女贞子&nbsp;&nbsp;&nbsp;&nbsp;+抗生素=降低用药效果。";
+$a[]="人参<br>&nbsp;&nbsp;&nbsp;&nbsp;+葡萄=导致腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+兔肉=导致上火；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+冬瓜=降低滋补效果；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=抵消人参功效，食积气滞、腹胀；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+甲鱼=影响人参疗效。";
+$a[]="生地黄&nbsp;&nbsp;&nbsp;&nbsp;+大葱=降低药效。";
+$a[]="酸奶<br>&nbsp;&nbsp;&nbsp;&nbsp;+香肠=引发癌症；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+咸鱼=影响吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄豆=引发肠胃不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+药物=降低药效。";
+$a[]="山药<br>&nbsp;&nbsp;&nbsp;&nbsp;+香蕉=易腹胀、不易消化；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+油菜=影响营养素的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+柿子=致胃胀•腹痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+胡萝卜=损失营养；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菠萝=有碍肠胃健康。";
+$a[]="熟地黄&nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=失去药效。";
+$a[]="桑葚&nbsp;&nbsp;&nbsp;&nbsp;+鸭蛋=可引发胃痛。";
+$a[]="天门冬&nbsp;&nbsp;&nbsp;&nbsp;+鲤鱼=蛋白质吸收少；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+鲫鱼=降低营养价值。";
+$a[]="乌梅&nbsp;&nbsp;&nbsp;&nbsp;+猪肉=腹泻。";
+$a[]="西洋参<br>&nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=影响功效；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+茶=破坏有效成分；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+山楂=降低西洋参功效。";
+$a[]="杏仁<br>&nbsp;&nbsp;&nbsp;&nbsp;+猪肉=容易引起腹痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+猪肺=蛋白质吸收少；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+板粟=引起胃痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+小米=呕吐、腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菱角=阻碍营养吸收。";
+$a[]="玉竹&nbsp;&nbsp;&nbsp;&nbsp;+辣椒=影响玉竹功效。";
+//水果禁忌
+$a[]="菠萝<br>&nbsp;&nbsp;&nbsp;&nbsp;+牛奶=影响消化吸收、引起腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸡蛋=影响消化吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+虾=引起胃肠不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+山药=有碍肠胃健康；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+香蕉=导致钾含量过高，对慢性肾炎者不利。";
+$a[]="白果&nbsp;&nbsp;&nbsp;&nbsp;+鳗鱼=引起身体不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+草鱼=引起身体不适。";
+$a[]="板粟<br>&nbsp;&nbsp;&nbsp;&nbsp;+牛肉=降低营养价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+羊肉=不易消化；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄豆=易引起腹泻、腹胀；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸭肉=易引起中毒。";
+$a[]="橙子&nbsp;&nbsp;&nbsp;&nbsp;+虾=不易消化、呕吐；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+猪肉=恶心、腹胀。";
+$a[]="草莓<br>&nbsp;&nbsp;&nbsp;&nbsp;+红薯=肠胃不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+玉米=引起肠胃不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+牛奶=形成草酸钙，阻碍人体对钙的吸收。";
+$a[]="桂圆<br>&nbsp;&nbsp;&nbsp;&nbsp;+猪肉=引起身体不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+海藻=引起腹泻；</br>
+          （桂圆容易上火，怀孕期间不吃桂圆）。";
+$a[]="甘蔗&nbsp;&nbsp;&nbsp;&nbsp;+核桃仁=影响铜的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鱼=影响健康。";
+$a[]="柑橘<br>&nbsp;&nbsp;&nbsp;&nbsp;+甲鱼=蛋白质吸收少；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鱼=影响健康；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+紫菜=引起肠胃不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=破坏维生素c。";
+$a[]="果汁&nbsp;&nbsp;&nbsp;&nbsp;+虾=腹泻；腹胀。";
+$a[]="花生&nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=导致腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+粳米=引起肠胃不适。";
+$a[]="红枣<br>&nbsp;&nbsp;&nbsp;&nbsp;+葱=引起消化不良；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=破坏维生素C；</br>
+          （体质燥热女性经期不宜食用）。";
+$a[]="核桃仁<br>&nbsp;&nbsp;&nbsp;&nbsp;+白酒=导致血热；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+甲鱼=导致中毒；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+黄豆=消化不良。";
+$a[]="哈密瓜&nbsp;&nbsp;&nbsp;&nbsp;+香蕉=增高血糖。";
+$a[]="橘子<br>&nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=致甲状腺肿大；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+兔肉=导致腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+牛奶=腹胀、腹泻、腹痛、影响牛奶的消化吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=气滞腹胀；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲍鱼=易形成结石；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鳗鱼=影响蛋白质吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+扁豆=导致高钾血症；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+胡萝卜=造成甲状腺肿。";
+$a[]="葵花籽&nbsp;&nbsp;&nbsp;&nbsp;+青椒=妨碍维生素E的吸收。";
+
+$a[]="莲子<br>&nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=产生不良反应；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+龟肉=产生不良反应；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+花生=钾含量过高，肾脏不佳患者慎食；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+甲鱼、螃蟹=可引起中毒《最新相宜相克速查手册》。";
+$a[]="李子<br>&nbsp;&nbsp;&nbsp;&nbsp;+鸭蛋=伤脾胃；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸡蛋=引起中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸡肉=引起痢疾。";
+$a[]="梨<br>&nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=损伤肠胃；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=致甲状腺肿大；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+羊肉=阻碍消化，致内热不散；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+鹅肉=伤肾脏；引发胃炎；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+金针菇=引起呕吐；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+苋菜=同食会呕吐。";
+$a[]="荔枝&nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=不利于维生素C的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+猪肝=破坏荔枝中的维生素C。";
+$a[]="木瓜<br>&nbsp;&nbsp;&nbsp;&nbsp;+河虾=导致上火；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+韭菜=导致上火；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+南瓜=影响维生素C的价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+牛肝=降低木瓜的营养价值。";
+$a[]="芒果&nbsp;&nbsp;&nbsp;&nbsp;+牛肝=破坏芒果中的维生素C；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+胡萝卜=流失芒果中的维生素C。";
+$a[]="猕猴桃<br>&nbsp;&nbsp;&nbsp;&nbsp;+胡萝卜=破坏猕猴桃中的维生素C；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+虾=导致中毒；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=导致中毒；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+牛奶=易腹胀、腹痛、腹泻；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+香蕉=钾含量过高，加重肾脏负担，引发腹泻。";
+$a[]="马蹄&nbsp;&nbsp;&nbsp;&nbsp;+鹿肉=伤元气。";
+$a[]="柠檬<br>&nbsp;&nbsp;&nbsp;&nbsp;+橘子=食用过多导致消化道不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+牛奶=影响胃肠消化；降低营养价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+山楂&nbsp;&nbsp;&nbsp;&nbsp;+酸性过强；影响消化。";
+$a[]="葡萄<br>&nbsp;&nbsp;&nbsp;&nbsp;+开水=引起腹胀；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+虾=刺激胃·肠道；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=抑制人体对碘的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+人参=导致腹泻。";
+$a[]="苹果<br>&nbsp;&nbsp;&nbsp;&nbsp;+海鲜=腹痛·恶心；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鱿鱼=易引起过敏；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=引起甲状腺肿；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=引起甲状腺肿；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+茶=导致维生素流失，影响铁质的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+糯米=致恶心、呕吐、腹痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+洋葱=诱发甲状腺肿大。";
+$a[]="山楂<br>&nbsp;&nbsp;&nbsp;&nbsp;+猪肝=破坏维生素C；和矿物质；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+柠檬=影响消化、酸性过强；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+虾=易腹痛、恶心；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鹿茸=减弱鹿茸的功效；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+海参=容易恶心、呕吐；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+紫菜=引起肠胃不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+荠菜=容易引起腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+人参=古籍记载影响药效；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+西洋参=古籍记载影响药效；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+海参=容易恶心、呕吐。";
+$a[]="石榴<br>&nbsp;&nbsp;&nbsp;&nbsp;+土豆/马铃薯=引起中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=刺激肠胃；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+带鱼=致腹痛、恶心呕吐。";
+$a[]="柿子<br>&nbsp;&nbsp;&nbsp;&nbsp;+章鱼=引起腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+海带=引起胃肠道不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+紫菜=会令人恶心、呕吐；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=降低营养价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+马铃薯/土豆=难以消化，易形成胃结石；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鹅肉=伤及脾胃；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+海参=致腹痛·恶心；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+山药=致胃胀•腹痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+虾=刺激肠胃、降低蛋白质的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=易凝结成不消物，阻碍肠胃蠕动与消化；</br>
+         （易凝结成不消物，阻碍肠胃蠕动与消化）。";
+$a[]="松子<br>&nbsp;&nbsp;&nbsp;&nbsp;+羊肉=致腹胀·胸闷；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=腹痛腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白酒=易导致脂肪肝；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄豆=阻碍蛋白质的吸收。";
+$a[]="圣女果/小西红柿<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白酒=引发肠道梗阻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=破坏维生素C；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+胡萝卜=破坏维生素C；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+红薯=易致腹痛腹泻和消化不良；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+马铃薯=易致腹痛腹泻和消化不良。";
+$a[]="桃&nbsp;&nbsp;&nbsp;&nbsp;+酒=会加重醉酒症状，引发昏迷；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+甲鱼=导致腹痛、腹泻；桃子中的果酸会降低甲鱼蛋白质的营养价值；。";
+$a[]="西瓜&nbsp;&nbsp;&nbsp;&nbsp;+羊肉=伤元气。";
+$a[]="香蕉<br>&nbsp;&nbsp;&nbsp;&nbsp;+芋头=导致腹胀；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+酸奶=产生致癌物质；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+土豆=易腹胀、不易消化；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+红薯=引起身体不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+马铃薯=面部会生雀斑；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+山药=易腹胀、不易消化；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+马蹄=导致体寒。";
+$a[]="杏仁<br>&nbsp;&nbsp;&nbsp;&nbsp;+猪肉=引起肚子痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+板粟=引起胃痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+小米=呕吐、腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菱角=阻碍营养吸收。";
+$a[]="樱桃&nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=阻碍营养吸收</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+牛肝=不利于维生素C的吸收。";
+$a[]="杨桃&nbsp;&nbsp;&nbsp;&nbsp;+柚子=性寒、钾含量很高，肠胃、肾脏不佳者慎食。";
+$a[]="杨梅&nbsp;&nbsp;&nbsp;&nbsp;+猪肚=引起中毒。";
+$a[]="腰果&nbsp;&nbsp;&nbsp;&nbsp;+白酒=影响肝脏功能。";
+$a[]="榛子&nbsp;&nbsp;&nbsp;&nbsp;+粳米=诱发胃肠疾病。";
+$a[]="枣&nbsp;&nbsp;&nbsp;&nbsp;+海蟹=同食易得疟疾
+        &nbsp;&nbsp;&nbsp;&nbsp;+鳝鱼=引起中毒。";
+  //水产
+$a[]="鲍鱼&nbsp;&nbsp;&nbsp;&nbsp;+橘子=易形成结石；
+          &nbsp;&nbsp;&nbsp;&nbsp;+牡蛎=影响铁元素的吸收。";
+$a[]="草鱼<br>&nbsp;&nbsp;&nbsp;&nbsp;+甘草=易中毒；
+          &nbsp;&nbsp;&nbsp;&nbsp;+白果=引起身体不适；
+         （草鱼胆有毒，不能吃，且要防止胆汁溅入眼中）。";
+$a[]="带鱼<br>&nbsp;&nbsp;&nbsp;&nbsp;+南瓜=易致中毒；
+          &nbsp;&nbsp;&nbsp;&nbsp;+石榴=致腹痛、恶心呕吐；
+          &nbsp;&nbsp;&nbsp;&nbsp;+牛油=导致胆固醇增高；
+          &nbsp;&nbsp;&nbsp;&nbsp;+羊油=导致胆固醇增高。";
+$a[]="蛤蜊<br>&nbsp;&nbsp;&nbsp;&nbsp;+猪肉=阻碍人体对维生素B1的吸收；</br></br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+啤酒=易引发痛风；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+牡蛎=破坏铁元素的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+芹菜=易引起腹泻、腹痛等；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+扁豆=腹痛 腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+荞麦=降低营养价值。";
+$a[]="干贝&nbsp;&nbsp;&nbsp;&nbsp;+芦笋=高嘌呤食物，易引发痛风；
+          &nbsp;&nbsp;&nbsp;&nbsp;+火腿=易形成致癌物质 亚硝胺。";
+$a[]="海带<br>&nbsp;&nbsp;&nbsp;&nbsp;+猪血=引起便秘；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+咖啡=降低铁吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白酒=消化不良；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+柿子=引起胃肠道不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菠菜=易在体内形成结石；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+茶=影响钙、铁的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+甘草=对健康不利；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+洋葱=易形成结石；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+薏米=多食会缺乏活力，引起淤血、静脉曲张。";
+$a[]="海藻&nbsp;&nbsp;&nbsp;&nbsp;+甘草=使水钠潴留；
+          &nbsp;&nbsp;&nbsp;&nbsp;+桂圆=引起腹泻。";
+$a[]="海蟹&nbsp;&nbsp;&nbsp;&nbsp;+大枣=同食易得疟疾。";
+$a[]="海鲜&nbsp;&nbsp;&nbsp;&nbsp;+苹果=腹痛·恶心。";
+$a[]="海鱼&nbsp;&nbsp;&nbsp;&nbsp;+南瓜=易中毒。";
+$a[]="海参<br>&nbsp;&nbsp;&nbsp;&nbsp;+醋=影响口感；
+          &nbsp;&nbsp;&nbsp;&nbsp;+山楂=容易恶心、呕吐；
+          &nbsp;&nbsp;&nbsp;&nbsp;+柿子=致腹痛·恶心。";
+$a[]="黄花鱼&nbsp;&nbsp;&nbsp;&nbsp;+洋葱=易形成结石；
+            &nbsp;&nbsp;&nbsp;&nbsp;+荞麦=易生痔疮；易导致消化不良。";
+$a[]="黑鱼&nbsp;&nbsp;&nbsp;&nbsp;+茄子=同食肚子痛。";
+$a[]="河虾&nbsp;&nbsp;&nbsp;&nbsp;+木瓜=导致上火。";
+$a[]="鲫鱼<br>&nbsp;&nbsp;&nbsp;&nbsp;+芥菜=引起水肿；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+冬瓜=妨碍营养吸收；导致身体脱水；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+猪肝=易导致肝淤气滞；容易导致生痈疮；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+狗肉=产生有害物质；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸡肉=易生痈疮；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸡蛋=令人呕吐，易产生异味；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=同食会中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+麦冬=功能不协；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+天门冬=降低营养价值。";
+$a[]="甲鱼<br>&nbsp;&nbsp;&nbsp;&nbsp;+柑橘=蛋白质吸收少；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+核桃仁=导致中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+莲子=可引起中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+芹菜=中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+咸菜=不利于消化；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+苋菜=易食物中毒；同食难消化，引起腹泻</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+薄荷=易食物中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸭蛋=损伤人体阳气；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸭肉=多食易腹泻；导致阴盛阳虚；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+桃子=桃子中的果酸会降低甲鱼蛋白质的营养价值；导致腹痛、腹泻。";
+$a[]="金枪鱼&nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=不利于铁的吸收。";
+$a[]="鲈鱼&nbsp;&nbsp;&nbsp;&nbsp;+奶酪=不利于钙吸收、导致腹泻；
+          &nbsp;&nbsp;&nbsp;&nbsp;+蛤蜊=致铜·铁流失。";
+$a[]="鲤鱼<br>&nbsp;&nbsp;&nbsp;&nbsp;+狗肉=易使人上火；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+猪肝=导致消化不良；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸡肉=妨碍营养吸收、引发痈疖；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+绿豆/南瓜=引起腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+芋头=易引起不适甚至中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+咸菜=易产生亚硝酸胺，引起癌症；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+甘草=会中毒；导致腹痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+天门冬=蛋白质吸收少。";
+$a[]="鲢鱼<br>&nbsp;&nbsp;&nbsp;&nbsp;+牛肝=影响营养吸收；
+          &nbsp;&nbsp;&nbsp;&nbsp;+牛肉=影响营养吸收；
+          &nbsp;&nbsp;&nbsp;&nbsp;+番茄/西红柿=番茄中的维生素C会抑制鱼肉中铜的释放。";
+$a[]="鳗鱼<br>&nbsp;&nbsp;&nbsp;&nbsp;+橘子=影响蛋白质吸收；
+          &nbsp;&nbsp;&nbsp;&nbsp;+牛肝=诱发心血管疾病；
+          &nbsp;&nbsp;&nbsp;&nbsp;+白果=引起身体不适。";
+$a[]="牡蛎<br>&nbsp;&nbsp;&nbsp;&nbsp;+蚕豆=降低锌的吸收；
+          &nbsp;&nbsp;&nbsp;&nbsp;+盐=导致钠摄取过量；
+          &nbsp;&nbsp;&nbsp;&nbsp;+花生=妨碍人体对维生素B1的吸收、利用。";
+$a[]="墨鱼&nbsp;&nbsp;&nbsp;&nbsp;+茄子=引起腹泻甚至霍乱。";
+$a[]="泥鳅&nbsp;&nbsp;&nbsp;&nbsp;+狗肉=对身体健康不利；
+          &nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=引起食物中毒。";
+$a[]="鲇鱼&nbsp;&nbsp;&nbsp;&nbsp;+牛肉=易导致中毒。";
+$a[]="螃蟹<br>&nbsp;&nbsp;&nbsp;&nbsp;+牡蛎=升高胆固醇；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+茶叶=容易引起便秘；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+枸杞=引起腹痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+花生=导致腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+橘子=气滞腹胀；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+猕猴桃=导致中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+梨=损伤肠胃；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+石榴=刺激肠胃；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+豆角=引起中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+芹菜=影响蛋白质的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+茄子=伤害肠胃，易腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+红薯=引起腹痛、腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+南瓜=易引起腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+芋头=降低营养价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+莲子=产生不良反应；可引起中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+柿子=易凝结成不消物，阻碍肠胃蠕动与消化。";
+$a[]="秋刀鱼&nbsp;&nbsp;&nbsp;&nbsp;+香肠=产生致癌物质（亚硝胺）。";
+$a[]="鳝鱼<br>&nbsp;&nbsp;&nbsp;&nbsp;+猪肉=温热助火；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菠菜=容易导致腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+狗肉=引起中毒；温热助火；伤肝；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+南瓜=引起中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+大枣=引起中毒 。";
+$a[]="扇贝&nbsp;&nbsp;&nbsp;&nbsp;+蚕豆=降低锌的吸收量
+         &nbsp;&nbsp;&nbsp;&nbsp;+玉米=不利于锌元素的吸收        。";
+$a[]="武昌鱼&nbsp;&nbsp;&nbsp;&nbsp;+奶酪=易引起腹泻。";
+$a[]="小鱼干&nbsp;&nbsp;&nbsp;&nbsp;+酒=嘌呤含量过高，痛风患者慎食。";
+$a[]="咸鱼&nbsp;&nbsp;&nbsp;&nbsp;+酸奶=影响吸收；
+          &nbsp;&nbsp;&nbsp;&nbsp;+西红柿=同食易产生致癌物。";
+$a[]="虾<br>&nbsp;&nbsp;&nbsp;&nbsp;+橄榄=引起中毒；
+         &nbsp;&nbsp;&nbsp;&nbsp;+南瓜=引起痢疾；
+         &nbsp;&nbsp;&nbsp;&nbsp;+苦瓜=影响钙的吸收；
+         &nbsp;&nbsp;&nbsp;&nbsp;+果汁=腹泻；腹胀；
+         &nbsp;&nbsp;&nbsp;&nbsp;+葡萄=刺激胃·肠道；
+         &nbsp;&nbsp;&nbsp;&nbsp;+猕猴桃=导致中毒；
+         &nbsp;&nbsp;&nbsp;&nbsp;+黄豆=引起消化不良；
+         &nbsp;&nbsp;&nbsp;&nbsp;+猪肉=易使人滞气；
+         &nbsp;&nbsp;&nbsp;&nbsp;+菠萝=引起胃肠不适；
+         &nbsp;&nbsp;&nbsp;&nbsp;+橙子=不易消化、呕吐；
+         &nbsp;&nbsp;&nbsp;&nbsp;+柿子=刺激肠胃、降低蛋白质的吸收；
+         &nbsp;&nbsp;&nbsp;&nbsp;+维C=中毒；
+         &nbsp;&nbsp;&nbsp;&nbsp;+山楂=易腹痛、恶心。";
+$a[]="虾皮&nbsp;&nbsp;&nbsp;&nbsp;+黄豆=影响钙的吸收；
+          &nbsp;&nbsp;&nbsp;&nbsp;+小米=恶心呕吐。";
+$a[]="鳕鱼&nbsp;&nbsp;&nbsp;&nbsp;+烤香肠=有可能会致癌；
+          &nbsp;&nbsp;&nbsp;&nbsp;+高盐食物=引起血压升高。";
+$a[]="鱿鱼<br>&nbsp;&nbsp;&nbsp;&nbsp;+番茄酱=加重肾脏负担；
+          &nbsp;&nbsp;&nbsp;&nbsp;+苹果=易引起过敏；
+          &nbsp;&nbsp;&nbsp;&nbsp;+芹菜=易形成致癌物质；
+          &nbsp;&nbsp;&nbsp;&nbsp;+茶=影响蛋白质的吸收。";
+$a[]="鱼&nbsp;&nbsp;&nbsp;&nbsp;+甘蔗=影响健康；
+        &nbsp;&nbsp;&nbsp;&nbsp;+西红柿=抑制营养吸收。";
+$a[]="章鱼&nbsp;&nbsp;&nbsp;&nbsp;+柿子=引起腹泻。";
+$a[]="紫菜<br>&nbsp;&nbsp;&nbsp;&nbsp;+柿子=会令人恶心、呕吐；
+          &nbsp;&nbsp;&nbsp;&nbsp;+山楂=引起肠胃不适；
+          &nbsp;&nbsp;&nbsp;&nbsp;+柑橘=引起肠胃不适；
+          &nbsp;&nbsp;&nbsp;&nbsp;+深色叶菜=易形成结石。";
+
+//肉蛋
+$a[]="鹌鹑&nbsp;&nbsp;&nbsp;&nbsp;+猪肝=易产生色素沉积；
+          &nbsp;&nbsp;&nbsp;&nbsp;+香菇=易生黑斑。";
+$a[]="鹌鹑蛋<br>&nbsp;&nbsp;&nbsp;&nbsp;+菌类=易导致面部长斑；
+            &nbsp;&nbsp;&nbsp;&nbsp;+猪肝=可诱发痔；
+            &nbsp;&nbsp;&nbsp;&nbsp;+香菇=易生黑斑；</br>
+           （鹌鹑蛋含有较高的胆固醇，不易多吃，特别是脑血管疾病的老人）。";
+$a[]="动物肝脏&nbsp;&nbsp;&nbsp;&nbsp;+荞麦=引发痼疾；
+              &nbsp;&nbsp;&nbsp;&nbsp;+菜花=降低营养素的吸收。";
+$a[]="动物血：高血压、高胆固醇、肝病及冠心病患者注意少吃。";
+$a[]="鹅肉<br>&nbsp;&nbsp;&nbsp;&nbsp;+鸡蛋=伤元气；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸭梨=引发胃炎；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+梨=伤肾脏；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+茄子=引发胃炎；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+柿子=伤及脾胃；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+啤酒=易使致癌物进入肝脏，损害肝细胞。";
+$a[]="鸽子：湿热者不宜多食、孕妇不宜食用。";
+$a[]="肝脏&nbsp;&nbsp;&nbsp;&nbsp;+西红柿=相互作用，降低营养价值。";
+$a[]="鸽蛋&nbsp;&nbsp;&nbsp;&nbsp;+豆浆=易破坏营养成分。";
+$a[]="狗肉<br>&nbsp;&nbsp;&nbsp;&nbsp;+鳝鱼=温热助火、伤肝、引起中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+生姜=导致腹痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲫鱼=产生有害物质；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲤鱼=易使人上火；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+蒜薹=引起身体不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+绿豆=引起腹胀；同食多吃易中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+绿豆芽=腹胀（服药时请勿食用绿豆芽，有解药性）；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+狗肾=产生有害物质；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+泥鳅=对身体健康不利。";
+$a[]="火腿&nbsp;&nbsp;&nbsp;&nbsp;+奶酪=产生致癌物质（亚硝胺）；
+          &nbsp;&nbsp;&nbsp;&nbsp;+干贝=易形成致癌物质 亚硝胺。";
+$a[]="鸡肉<br>&nbsp;&nbsp;&nbsp;&nbsp;+芹菜=易伤元气；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+李子=引起痢疾；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+狗肾=引起痢疾；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菊花=易致中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+大蒜=易出现气滞；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+芥末=容易上火、伤元气；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲫鱼=易生痈疮；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲤鱼=妨碍营养吸收、引发痈疖；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+兔肉=引发腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+芥菜=同食伤元气；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+葱=（公鸡肉）助阳动火伤身；
+          &nbsp;&nbsp;&nbsp;&nbsp;+糯米=不易消化。";
+$a[]="鸡蛋<br>&nbsp;&nbsp;&nbsp;&nbsp;+白糖=对身体不利；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+银耳=（蛋黄）生成有害物质；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+红薯=容易造成腹痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+兔肉/柿子=易致腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲤鱼=令人呕吐，易产生异味；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+茶叶=降低对蛋白质和铁的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+糖精=同食中毒、死亡；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菠萝=影响消化吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+李子=引起中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+香椿=易产生致癌物质亚硝胺。";
+$a[]="鸡汤&nbsp;&nbsp;&nbsp;&nbsp;+竹笋=引发痛风，加重肾脏负担。";
+$a[]="腊肉&nbsp;&nbsp;&nbsp;&nbsp;+香肠=易产生致癌物亚硝酸。";
+$a[]="鹿肉&nbsp;&nbsp;&nbsp;&nbsp;+马蹄=伤元气。";
+$a[]="驴肉<br>&nbsp;&nbsp;&nbsp;&nbsp;+金针菇=可引发心痛；=易引起腹痛、腹泻；
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄花=同食心痛致命；
+          &nbsp;&nbsp;&nbsp;&nbsp;+香菇=可引起腹痛腹泻。";
+$a[]="马肉&nbsp;&nbsp;&nbsp;&nbsp;+木耳=同食得霍乱；
+          &nbsp;&nbsp;&nbsp;&nbsp;+大米=容易导致心痛。";
+$a[]="牛肉<br>&nbsp;&nbsp;&nbsp;&nbsp;+白酒=导致上火；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+红糖=引起腹胀；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+板栗=引起呕吐；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+田螺=不易消化，引起腹胀；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲇鱼=易导致中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲢鱼=影响营养吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+橄榄=可引起身体不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+毛姜=同食中毒死亡；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菠菜=降低营养价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+韭菜=发热动火，导致牙龈肿痛、口疮。";
+$a[]="牛肝<br>&nbsp;&nbsp;&nbsp;&nbsp;+鳗鱼=诱发心血管疾病；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲢鱼=影响营养吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+木瓜=降低木瓜的营养价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+芒果=破坏芒果中的维生素C；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+樱桃=不利于维生素C的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白菜=降低营养价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+芥蓝=影响维生素的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+茼蒿=会干扰牛肝中的矿物质吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+西蓝花=使维生素氧化，降低营养价值。";
+$a[]="牛油&nbsp;&nbsp;&nbsp;&nbsp;+带鱼=导致胆固醇增高。";
+$a[]="兔肉<br>&nbsp;&nbsp;&nbsp;&nbsp;+木耳=腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+香菇=（野兔肉）引发痔疮；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+姜=腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+人参=导致上火；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+橘子=可导致胃肠功能紊乱或腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白菜=可致腹泻或呕吐；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+小白菜=同食易呕吐；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+芹菜=可导致皮肤疾患、容易引起皮肤脱皮；同食脱头发；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸭血=可导致腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸡蛋=刺激胃肠道，可导致腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸡心、鸡肝、鳖肉=诱发痼疾。";
+$a[]="乌鸡&nbsp;&nbsp;&nbsp;&nbsp;+黄豆=影响蛋白质、铁、锌的吸收；
+          &nbsp;&nbsp;&nbsp;&nbsp;+苋菜=导致营养流失。";
+$a[]="香肠&nbsp;&nbsp;&nbsp;&nbsp;+鳕鱼=有可能会致癌。";
+$a[]="羊肉<br>&nbsp;&nbsp;&nbsp;&nbsp;+乳酪=产生不良反应；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+西瓜=易伤元气；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+苦瓜=易腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+南瓜=易引发黄疸和脚气病；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+醋=降低蛋白质的吸收利用率；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+竹笋=可能引起食物中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+梅干菜=同食易导致胸闷；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+茶=吃羊肉后马上喝茶易引发便秘；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+田螺=同食积食腹胀；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+百合=引起腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+板栗=不易消化；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+松子=致腹胀·胸闷；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+绿豆=降低温补功效；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+红小豆=降低温补功效；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+梨=阻碍消化，致内热不散；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+韭菜=易生热上火。";
+$a[]="羊血&nbsp;&nbsp;&nbsp;&nbsp;+何首乌=古籍记载降低药效。";
+$a[]="羊油&nbsp;&nbsp;&nbsp;&nbsp;+带鱼=导致胆固醇增高。";
+$a[]="羊肝<br>&nbsp;&nbsp;&nbsp;&nbsp;+竹笋=产生有害物质；
+          &nbsp;&nbsp;&nbsp;&nbsp;+赤小豆=引起身体不适；
+          &nbsp;&nbsp;&nbsp;&nbsp;+红小豆=易中毒；
+          &nbsp;&nbsp;&nbsp;&nbsp;+猪肉=令人气滞胸闷。";
+$a[]="鸭肉<br>&nbsp;&nbsp;&nbsp;&nbsp;+鳖肉/甲鱼=多食易腹泻、导致阴盛阳虚；
+          &nbsp;&nbsp;&nbsp;&nbsp;+板栗=易引起中毒；
+          &nbsp;&nbsp;&nbsp;&nbsp;+大蒜=易引起气滞。";
+$a[]="鸭蛋<br>&nbsp;&nbsp;&nbsp;&nbsp;+李子=可引起中毒；
+          &nbsp;&nbsp;&nbsp;&nbsp;+桑葚=可引发胃痛；
+          &nbsp;&nbsp;&nbsp;&nbsp;+甲鱼=损伤人体阳气。";
+$a[]="野鸡<br>&nbsp;&nbsp;&nbsp;&nbsp;+黑木耳=消化不良；
+          &nbsp;&nbsp;&nbsp;&nbsp;+口蘑=引发痔疮；
+          &nbsp;&nbsp;&nbsp;&nbsp;+香菇=引发痔疮。";
+$a[]="猪心&nbsp;&nbsp;&nbsp;&nbsp;+吴茱萸=对健康有害；
+          &nbsp;&nbsp;&nbsp;&nbsp;+茶叶=造成便秘；容易导致便秘，影响铁的吸收。";
+$a[]="猪肉<br>&nbsp;&nbsp;&nbsp;&nbsp;+田螺=伤肠胃；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菱角=同食肚子痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菱角=腹痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+乌梅=腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+橙子=恶心、腹胀；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+杏仁=容易引起腹痛；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+扁豆=腹胀、气滞；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄豆=降低营养价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+红小豆=易引起胀气；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+羊肝=令人气滞胸闷；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+百合=易致中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+何首乌=古籍记载降低药效；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菊花=可致中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+桂圆=引起身体不适；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鳝鱼=温热助火；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+蛤蜊=阻碍人体对维生素B1的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+茶=造成便秘；单宁酸阻碍铁和蛋白质的吸收、利用。";
+$a[]="猪肺&nbsp;&nbsp;&nbsp;&nbsp;+花菜=致气滞·霍乱；
+          &nbsp;&nbsp;&nbsp;&nbsp;+杏仁=蛋白质吸收少。";
+$a[]="猪肚<br>&nbsp;&nbsp;&nbsp;&nbsp;+杨梅=引起中毒；
+          &nbsp;&nbsp;&nbsp;&nbsp;+芦荟=引起腹泻；
+          &nbsp;&nbsp;&nbsp;&nbsp;+啤酒=嘌呤含量过高，引发痛风。";
+$a[]="猪腰&nbsp;&nbsp;&nbsp;&nbsp;+茶树菇=影响营养吸收；
+          &nbsp;&nbsp;&nbsp;&nbsp;+石斛=损害肾脏。";
+$a[]="猪肝<br>&nbsp;&nbsp;&nbsp;&nbsp;+韭菜=易造成流产、早产或胎儿畸形；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=降低营养价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菜花=降低矿物质吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+西蓝花=降低矿物质吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+莲藕=影响对铁等微量元素的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+山楂=破坏维生素C和矿物质；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+荔枝=破坏荔枝中的维生素C；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+ 红酒=影响人体对铁的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+豆腐=诱发痼疾；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲫鱼=易导致肝淤气滞；容易导致生痈疮；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+雀肉=导致消化不良甚至中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲤鱼=导致消化不良。";
+$a[]="猪蹄&nbsp;&nbsp;&nbsp;&nbsp;+甘草=容易引起中毒；
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄豆=破坏营养。";
+$a[]="猪心&nbsp;&nbsp;&nbsp;&nbsp;+花生=影响锌的吸收；
+          &nbsp;&nbsp;&nbsp;&nbsp;+茶叶=容易导致便秘，影响铁的吸收。";
+$a[]="猪血<br>&nbsp;&nbsp;&nbsp;&nbsp;+补骨脂=两者作用相反；
+          &nbsp;&nbsp;&nbsp;&nbsp;+海带=引起便秘；
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄豆=易导致消化不良。";
+$a[]="猪骨/排骨&nbsp;&nbsp;&nbsp;&nbsp;+苦瓜=影响钙的吸收。";
+$a[]="排骨&nbsp;&nbsp;&nbsp;&nbsp;+苦瓜=影响钙的吸收。";
+//蔬菜
+$a[]="菠菜<br>&nbsp;&nbsp;&nbsp;&nbsp;+黄豆=损害牙齿；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+黑豆=破坏营养；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+燕麦=影响钙的吸收；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+豌豆=影响钙的吸收；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+牛肉=降低营养价值；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+鳝鱼=腹泻；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+韭菜=腹泻；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+豆腐=易产生草酸钙，产生结石；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+牛奶=引发痢疾；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+乳酪=影响消化吸收；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=影响消化吸收；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=影响消化吸收；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+海带=易在体内形成结石。";
+$a[]="白萝卜<br>&nbsp;&nbsp;&nbsp;&nbsp;+猪肝=降低营养价值；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+黑木耳=容易引发皮炎；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=引起腹泻；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+胡萝卜=会破坏维生素C；易腹泻；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+人参=食积气滞、腹胀；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+西洋参=影响功效；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+党参=降低药效；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+黄芩=降低功效；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+鹿茸=减弱鹿茸的功效；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+何首乌=易致腹泻；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+熟地黄=失去药效；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+梨=致甲状腺肿大；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+葡萄=抑制人体对碘的吸收；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+苹果=引起甲状腺肿；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+柿子=降低营养价值。";
+$a[]="白菜&nbsp;&nbsp;&nbsp;&nbsp;+兔肉=可致腹泻或呕吐
+          &nbsp;&nbsp;&nbsp;&nbsp;+牛肝=降低营养价值。";
+$a[]="扁豆<br>&nbsp;&nbsp;&nbsp;&nbsp;+猪肉=腹胀、气滞；
+         &nbsp;&nbsp;&nbsp;&nbsp;+蛤蜊=腹痛 腹泻；
+         &nbsp;&nbsp;&nbsp;&nbsp;+橘子=导致高钾血症。";
+$a[]="百合&nbsp;&nbsp;&nbsp;&nbsp;+猪肉=易引起中毒。";
+$a[]="蓖麻子&nbsp;&nbsp;&nbsp;&nbsp;+黑豆=对身体健康不利。";
+$a[]="菜花<br>&nbsp;&nbsp;&nbsp;&nbsp;+猪肺=令人气滞；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+猪肝=降低矿物质吸收；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+牛奶=降低钙的吸收；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+西葫芦=破坏某些营养成分；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+动物肝脏=降低营养素的吸收。";
+$a[]="蚕豆&nbsp;&nbsp;&nbsp;&nbsp;+扇贝=降低锌的吸收量。";
+$a[]="茶树菇&nbsp;&nbsp;&nbsp;&nbsp;+猪腰=影响营养吸收。";
+$a[]="草菇：无论是干品还是鲜品都不宜浸泡时间过长，以免造成营养素的大量流失，也不宜冷水浸泡。";
+$a[]="冬瓜<br>&nbsp;&nbsp;&nbsp;&nbsp;+鲫鱼=导致身体脱水；妨碍营养吸收；
+         &nbsp;&nbsp;&nbsp;&nbsp;+人参（补药）=降低滋补效果；
+         &nbsp;&nbsp;&nbsp;&nbsp;+醋=破坏冬瓜的营养成分。";
+$a[]="豆角&nbsp;&nbsp;&nbsp;&nbsp;+牛奶=生成有害物质；
+         &nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=引起中毒。";
+$a[]="胡萝卜<br>&nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=降低营养价值；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+酒=损害肝脏；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+辣椒=破坏维生素C；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+醋破坏胡萝卜素；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+西红柿=破坏维生素c；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+圣女果/小西红柿=破坏维生素C；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+橘子=造成甲状腺肿；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+山药=损失营养；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+芒果=流失芒果中的维生素C；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+猕猴桃=破坏猕猴桃中的维生素C。";
+$a[]="黑木耳<br>&nbsp;&nbsp;&nbsp;&nbsp;+田螺=不利于消化；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+茶=不利铁的吸收；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+麦冬=引起胸闷；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+野鸡=消化不良；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+白萝卜=易引发皮炎；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+红酒=不利于人体对铁的吸收。";
+$a[]="黄瓜<br>&nbsp;&nbsp;&nbsp;&nbsp;+柑橘=破坏维生素c；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+花生=导致腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+番茄=破坏维生素C；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+金枪鱼=不利于铁的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+荔枝=不利于维生素C的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+圣女果/小西红柿=破坏维生素C；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+芝麻=导致腹泻。";
+$a[]="黄花&nbsp;&nbsp;&nbsp;&nbsp;+驴肉=同食心痛致命。";
+$a[]="红薯<br>&nbsp;&nbsp;&nbsp;&nbsp;+白酒=易得结石；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+西红柿=引起呕吐；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+香蕉=易引起身体不适；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+豆浆=影响消化吸收；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+玉米=造成腹胀；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+燕麦=胃痉挛·胀气；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+鸡蛋=引起腹痛；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=引起腹痛、腹泻。";
+$a[]="韭菜<br>&nbsp;&nbsp;&nbsp;&nbsp;+白酒=  容易上火  ；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+菠菜=引起腹泻；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=腹泻；降低药效；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+羊肉=易生热上火；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+猪肝=易造成流产、早产或胎儿畸形；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+牛肉=发热动火，导致牙龈肿痛、口疮；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+醋=降低营养价值；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+牛奶=影响钙的吸收；</br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+木瓜=导致上火。";
+$a[]="荠菜&nbsp;&nbsp;&nbsp;&nbsp;+山楂=容易引起腹泻。";
+$a[]="金针菇&nbsp;&nbsp;&nbsp;&nbsp;+驴肉=易引起腹痛、腹泻；
+           &nbsp;&nbsp;&nbsp;&nbsp;+鸭梨=引起呕吐。";
+$a[]="茭白&nbsp;&nbsp;&nbsp;&nbsp;+豆腐=易形成结石
+        &nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=引发痼疾。";
+$a[]="芥蓝&nbsp;&nbsp;&nbsp;&nbsp;+牛肝=影响维生素的吸收。";
+$a[]="芥菜<br>&nbsp;&nbsp;&nbsp;&nbsp;+鸭梨=同食发呕；
+         &nbsp;&nbsp;&nbsp;&nbsp;+鲫鱼=引起水肿；
+       &nbsp;&nbsp;&nbsp;&nbsp;+鸡肉=同食伤元气。";
+$a[]="蕨菜&nbsp;&nbsp;&nbsp;&nbsp;+大米=引起胃痛
+       &nbsp;&nbsp;&nbsp;&nbsp;+花生=引起消化不良。";
+$a[]="空心菜<br>&nbsp;&nbsp;&nbsp;&nbsp;+牛奶（乳制品）=影响钙质吸收并形成结石；
+            &nbsp;&nbsp;&nbsp;&nbsp;+乳酪=影响钙质吸收；
+            &nbsp;&nbsp;&nbsp;&nbsp;+枸杞子=易腹胀、腹泻。";
+$a[]="苦瓜<br>&nbsp;&nbsp;&nbsp;&nbsp;+羊肉=易腹泻；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+排骨=影响钙的吸收；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=两者均性凉，容易伤脾胃；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+虾=影响钙的吸收；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+豆鼓=钠含量过高，不适合高血压患者食用。";
+$a[]="口蘑&nbsp;&nbsp;&nbsp;&nbsp;+野鸡肉=引发痔疮。";
+$a[]="莲藕&nbsp;&nbsp;&nbsp;&nbsp;+猪肝=影响对铁等微量元素的吸收。";
+$a[]="芦荟&nbsp;&nbsp;&nbsp;&nbsp;+绿茶=易引起流产，影响铁质的吸收；
+       &nbsp;&nbsp;&nbsp;&nbsp;+猪肚=引起腹泻。";
+$a[]="绿豆芽&nbsp;&nbsp;&nbsp;&nbsp;+狗肉=腹胀；（服药时请勿食用绿豆芽，有解药性）。";
+$a[]="莲子&nbsp;&nbsp;&nbsp;&nbsp;+花生=钾含量过高，肾脏不佳患者慎食。";
+$a[]="菱角&nbsp;&nbsp;&nbsp;&nbsp;+杏仁=阻碍营养吸收。";
+$a[]="辣椒&nbsp;&nbsp;&nbsp;&nbsp;+玉竹=影响玉竹功效；
+         &nbsp;&nbsp;&nbsp;&nbsp;+南瓜=破坏维生素C。";
+$a[]="芦笋&nbsp;&nbsp;&nbsp;&nbsp;+干贝=高嘌呤食物，易引发痛风；<br>
+           （不宜久存，否则容易纤维化、老化，降低营养价值，所以要鲜吃）。";
+$a[]="梅干菜&nbsp;&nbsp;&nbsp;&nbsp;+羊肉=同食易导致胸闷。";
+$a[]="马蹄&nbsp;&nbsp;&nbsp;&nbsp;+香蕉=导致体寒；
+          &nbsp;&nbsp;&nbsp;&nbsp;+鹿肉=伤元气。";
+$a[]="马铃薯<br>&nbsp;&nbsp;&nbsp;&nbsp;+香蕉=易生雀斑；</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;+柿子=难以消化，易形成胃结石；</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;+番茄=易造成消化不良；</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;+石榴=可引发中毒；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+玉米=造成腹胀。";
+$a[]="南瓜<br>&nbsp;&nbsp;&nbsp;&nbsp;+羊肉=致黄疸•脚气；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+辣椒=破坏维生素C；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+虾=易引起腹泻；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=易引起腹泻；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+番茄=易破坏营养成分；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+海鱼=易中毒；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+鳝鱼=引起中毒；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+带鱼=易致中毒；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+木瓜=影响维生素C的价值。";
+$a[]="平菇：菌类食用过敏者忌食。";
+$a[]="茄子<br>&nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=伤害肠胃，易腹泻；</br>
+           &nbsp;&nbsp;&nbsp;&nbsp;+墨鱼=引起腹泻甚至霍乱；</br>
+           &nbsp;&nbsp;&nbsp;&nbsp;+黑鱼=同食肚子痛；</br>
+           &nbsp;&nbsp;&nbsp;&nbsp;+鹅肉=引发胃炎；</br>
+           &nbsp;&nbsp;&nbsp;&nbsp;+黑豆=影响营养吸收。";
+$a[]="青椒&nbsp;&nbsp;&nbsp;&nbsp;+葵花籽=妨碍维生素E的吸收。";
+$a[]="芹菜&nbsp;&nbsp;&nbsp;&nbsp;+甲鱼=中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菊花=呕吐；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=芹菜中的维生素C会被分解破坏；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+黄豆=影响铁的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鱿鱼=易形成致癌物质；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+南瓜=破坏芹菜的营养价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+鸡肉=易伤元气；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+兔肉=容易引起皮肤脱皮；、同食脱头发 、可导致皮肤疾患；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+蛤蜊=易引起腹泻、腹痛等；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=影响蛋白质的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+醋=不利于对钙的吸收。";
+$a[]="丝瓜<br>&nbsp;&nbsp;&nbsp;&nbsp;+菠菜=导致腹泻；
+         &nbsp;&nbsp;&nbsp;&nbsp;+芦荟=易致腹痛、腹泻；
+         （月经不调者少吃，脾胃虚寒者慎吃）。";
+$a[]="生菜&nbsp;&nbsp;&nbsp;&nbsp;+醋=破坏营养。";
+
+$a[]="四季豆&nbsp;&nbsp;&nbsp;&nbsp;+菠菜=影响钙的吸收。";
+$a[]="蒜薹&nbsp;&nbsp;&nbsp;&nbsp;+狗肉=引起身体不适。";
+$a[]="茼蒿<br>&nbsp;&nbsp;&nbsp;&nbsp;+牛肝=会干扰牛肝中的矿物质吸收；
+        &nbsp;&nbsp;&nbsp;&nbsp;+酱油=导致肠胃敏感者胸闷；
+        &nbsp;&nbsp;&nbsp;&nbsp;+凉性水果=引起肠胃不适、腹泻、腹痛。";
+$a[]="土豆/马铃薯<br>&nbsp;&nbsp;&nbsp;&nbsp;+香蕉=易生雀斑；</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;+柿子=难以消化，易形成胃结石；</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;+番茄=易造成消化不良；</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;+石榴=可引发中毒；</br>
+             &nbsp;&nbsp;&nbsp;&nbsp;+玉米=造成腹胀。";
+$a[]="甜椒/青椒<br>&nbsp;&nbsp;&nbsp;&nbsp;+紫甘蓝=降低对维生素的吸收利用；
+                 &nbsp;&nbsp;&nbsp;&nbsp;+胡萝卜=破坏营养；
+                 &nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=二者相克，不宜同食。";
+$a[]="豌豆&nbsp;&nbsp;&nbsp;&nbsp;+醋=消化不良、（会使精子数量减少，降低男性生殖能力）。";
+$a[]="莴笋&nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=容易引起腹泻；
+          &nbsp;&nbsp;&nbsp;&nbsp;+乳酪=容易引起腹痛腹泻。";
+$a[]="香菇<br>&nbsp;&nbsp;&nbsp;&nbsp;+鹌鹑肉/鹌鹑蛋=易生黑斑；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+兔肉（野兔肉）=引发痔疮；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+酒=会减少维生素D的摄入；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+野鸡=引发痔疮；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+驴肉=可引起腹痛腹泻；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+螃蟹=易引起结石症状；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+番茄/西红柿=破坏类胡萝卜素。";
+$a[]="小白菜&nbsp;&nbsp;&nbsp;&nbsp;+兔肉=引起腹泻；同食易呕吐；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+醋=营养流失。";
+$a[]="西红柿<br>&nbsp;&nbsp;&nbsp;&nbsp;+红薯=引起呕吐；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+鱼肉=抑制营养吸收；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+鲢鱼=番茄中的维生素C会抑制鱼肉中铜的释放；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=降低维生素c的吸收利用率；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+咸鱼=同食易产生致癌物；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+南瓜=易破坏营养成分；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+肝脏=相互作用，降低营养价值；</br>
+            &nbsp;&nbsp;&nbsp;&nbsp;+绿豆=同食伤元气。";
+$a[]="西葫芦&nbsp;&nbsp;&nbsp;&nbsp;+番茄=破坏番茄中的维生素。";
+$a[]="西蓝花&nbsp;&nbsp;&nbsp;&nbsp;+牛奶=同食会影响钙的吸收；
+            &nbsp;&nbsp;&nbsp;&nbsp;+猪肝=降低矿物质吸收；
+            &nbsp;&nbsp;&nbsp;&nbsp;+牛肝=使维生素氧化，降低营养价值。";
+$a[]="苋菜&nbsp;&nbsp;&nbsp;&nbsp;+甲鱼/龟肉=同食难消化，引起腹泻；易食物中毒；
+         &nbsp;&nbsp;&nbsp;&nbsp;+鸭梨=同食会呕吐；
+        &nbsp;&nbsp;&nbsp;&nbsp;+乌鸡=导致营养流失。";
+$a[]="香椿<br>&nbsp;&nbsp;&nbsp;&nbsp;+菜花=影响香椿中钙的吸收；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=破坏香椿中的维生素C；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+高钾食物=引起胃肠痉挛、腹胀腹泻等；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+鸡蛋=易产生致癌物质亚硝胺。";
+$a[]="洋葱<br>&nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=伤害眼睛；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+海带=易形成结石；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+青椒/甜椒=降低营养价值；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+黄花鱼=易形成结石；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+苹果=诱发甲状腺肿大。";
+$a[]="油麦菜&nbsp;&nbsp;&nbsp;&nbsp;+南瓜=破坏维生素C。";
+$a[]="圆白菜&nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=降低营养价值。";
+$a[]="油菜<br>&nbsp;&nbsp;&nbsp;&nbsp;+山药=影响营养素的吸收；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+南瓜=降低油菜的营养价值；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+胡萝卜=影响维生素C的吸收；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+竹笋=破坏维生素C；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=破坏维生素C；<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;+补骨脂=两者性味相反。";
+$a[]="银耳<br>&nbsp;&nbsp;&nbsp;&nbsp;+菠菜=破坏维生素C；
+         &nbsp;&nbsp;&nbsp;&nbsp;+蛋黄=生成有害物质；
+         &nbsp;&nbsp;&nbsp;&nbsp;+四环素类药物=降低药效；
+         （熟银耳忌久放）。";
+$a[]="芋头<br>&nbsp;&nbsp;&nbsp;&nbsp;+生鲜蟹肉=降低营养价值；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+鲤鱼=易引起不适甚至中毒；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+香蕉=可能导致中毒；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+醋=延长淀粉在胃里的分解时间，影响消化；<br>
+         （容易腹胀的人吃芋头时少喝水）。";
+$a[]="竹笋<br>&nbsp;&nbsp;&nbsp;&nbsp;+豆腐=破坏营养，易形成结石；
+         &nbsp;&nbsp;&nbsp;&nbsp;+羊肝=产生有害物质；
+         &nbsp;&nbsp;&nbsp;&nbsp;+鸡汤=引发痛风，加重肾脏负担；
+         &nbsp;&nbsp;&nbsp;&nbsp;+羊肉=可能引起食物中毒。";
+$a[]="紫菜&nbsp;&nbsp;&nbsp;&nbsp;+山楂=引起肠胃不适。";
+//五谷
+$a[]="扁豆&nbsp;&nbsp;&nbsp;&nbsp;+橘子=导致高钾血症；
+          &nbsp;&nbsp;&nbsp;&nbsp;+蛤蜊=腹痛 腹泻。";
+$a[]="大米<br>&nbsp;&nbsp;&nbsp;&nbsp;+碱=破坏维生素B1，导致脚气病；
+          &nbsp;&nbsp;&nbsp;&nbsp;+马肉=容易导致心痛；
+          &nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=同食易致呕吐、腹泻；
+          &nbsp;&nbsp;&nbsp;&nbsp;+蕨菜=引起胃痛。";
+$a[]="豆腐<br>&nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=腹泻；
+          &nbsp;&nbsp;&nbsp;&nbsp;+茭白=易形成结石；
+          &nbsp;&nbsp;&nbsp;&nbsp;+菠菜=易患结石症。";
+$a[]="豆豉&nbsp;&nbsp;&nbsp;&nbsp;+苦瓜=钠含量过高，不适合高血压患者食用；。";
+$a[]="赤小豆&nbsp;&nbsp;&nbsp;&nbsp;+盐=药效减半；
+             &nbsp;&nbsp;&nbsp;&nbsp;+羊肝=引起身体不适。";
+$a[]="蚕豆&nbsp;&nbsp;&nbsp;&nbsp;+田螺=同食会导致肠绞痛。";
+$a[]="芝麻/黑芝麻&nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=导致腹泻；
+                 &nbsp;&nbsp;&nbsp;&nbsp;+巧克力=影响营养吸收。";
+$a[]="黄豆<br>&nbsp;&nbsp;&nbsp;&nbsp;+虾皮=影响钙的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+虾=引起消化不良；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+核桃=消化不良；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=同食易腹泻；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+猪血=易导致消化不良；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+芹菜=影响铁的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+菠菜=损害牙齿；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+酸奶=影响钙的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+猪肉=降低营养价值；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+猪蹄=破坏营养；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+乌鸡=影响蛋白质、铁、锌的吸收。";
+$a[]="红小豆<br>&nbsp;&nbsp;&nbsp;&nbsp;+羊肝=易中毒；
+             &nbsp;&nbsp;&nbsp;&nbsp;+猪肉=易引起胀气；
+             &nbsp;&nbsp;&nbsp;&nbsp;+红茶=破坏铁元素的吸收；
+             &nbsp;&nbsp;&nbsp;&nbsp;+羊肉=降低温补功效。";
+$a[]="花生<br>&nbsp;&nbsp;&nbsp;&nbsp;+黄瓜=导致腹泻；<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+蕨菜=引起消化不良；<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+猪心=影响锌的吸收；<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+莲子=钾含量过高，肾脏不佳患者慎食；<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+牡蛎=妨碍人体对维生素B1的吸收、利用。";
+$a[]="黑豆<br>&nbsp;&nbsp;&nbsp;&nbsp;+茄子=影响营养吸收；
+          &nbsp;&nbsp;&nbsp;&nbsp;+菠菜=破坏营养；
+          &nbsp;&nbsp;&nbsp;&nbsp;+蓖麻子=对身体健康不利。";
+$a[]="黑米：未完全煮熟，伤肠胃；用力淘洗或淘洗时间过长，营养流失。";
+$a[]="绿豆<br>&nbsp;&nbsp;&nbsp;&nbsp;+鱼=破坏维生素B1的吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+羊肉=降低温补功效；</br>
+         &nbsp;&nbsp;&nbsp;&nbsp;+狗肉=引起腹胀；同食多吃易中毒；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+当归=致恶心·呕吐；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+糙米=易产生蟹合物，不利于肠胃吸收；</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+西红柿=同食伤元气；</br>
+           （不要用铁锅煮，会变黑色，不但影响口感而且有害）。";
+$a[]="糯米<br>&nbsp;&nbsp;&nbsp;&nbsp;+红薯=导致腹胀；
+           &nbsp;&nbsp;&nbsp;&nbsp;+苹果=致恶心、呕吐、腹痛；
+           &nbsp;&nbsp;&nbsp;&nbsp;+鸡肉=不易消化。";
+$a[]="荞麦&nbsp;&nbsp;&nbsp;&nbsp;+黄鱼（黄花鱼）=消化不良；
+          &nbsp;&nbsp;&nbsp;&nbsp;+鲜蛤=降低营养价值。";
+$a[]="豌豆&nbsp;&nbsp;&nbsp;&nbsp;+食醋=引起消化不良；
+           &nbsp;&nbsp;&nbsp;&nbsp;+菠菜=影响钙的吸收。";
+$a[]="小米<br>&nbsp;&nbsp;&nbsp;&nbsp;+杏仁=呕吐·恶心、泄泻；
+          &nbsp;&nbsp;&nbsp;&nbsp;+小麦=对脾胃不好；
+          &nbsp;&nbsp;&nbsp;&nbsp;+虾皮=恶心呕吐。";
+$a[]="小麦<br>&nbsp;&nbsp;&nbsp;&nbsp;+蜂蜜=引起身体不适；
+           &nbsp;&nbsp;&nbsp;&nbsp;+碱=破坏维生素；
+           &nbsp;&nbsp;&nbsp;&nbsp;+枇杷=不易消化；
+           &nbsp;&nbsp;&nbsp;&nbsp;+小米=对脾胃不好；。";
+$a[]="玉米<br>&nbsp;&nbsp;&nbsp;&nbsp;+田螺=引起中毒；
+          &nbsp;&nbsp;&nbsp;&nbsp;+红薯=造成腹胀；
+          &nbsp;&nbsp;&nbsp;&nbsp;+马铃薯=造成腹胀；
+         &nbsp;&nbsp;&nbsp;&nbsp;+扇贝=不利于锌元素的吸收。";
+$a[]="燕麦&nbsp;&nbsp;&nbsp;&nbsp;+红薯=胃痉挛·胀气；
+          &nbsp;&nbsp;&nbsp;&nbsp;+菠菜=影响钙的吸收。";
+$a[]="薏米<br>&nbsp;&nbsp;&nbsp;&nbsp;+杏仁=致呕吐·泄泻；<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+红豆=致呕吐、泄泻；<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;+海带=多食会缺乏活力，引起淤血、静脉曲张；<br>
+          （薏米会使身体冷虚，虚寒体质不宜长期食用）。";
+$a[]="紫米&nbsp;&nbsp;&nbsp;&nbsp;+茶=阻碍人体对铁质的吸收和利用。";
+$a[]="糙米<br>&nbsp;&nbsp;&nbsp;&nbsp;+牛奶=破坏维生素A；
+          &nbsp;&nbsp;&nbsp;&nbsp;+绿豆=易产生蟹合物，不利于肠胃吸收；
+         （充分咀嚼否则易伤肠胃）。";
+//获得来自 URL 的 q 参数
+$q=$_GET["q"];
+
+//如果 q 大于 0，则查找数组中的所有提示
+if (strlen($q) > 0)
+  {
+  $hint="";
+  for($i=0; $i<count($a); $i++)
+    {
+    if (strtolower($q)==strtolower(substr($a[$i],0,strlen($q))))
+      {
+      if ($hint=="")
+        {
+        $hint=$a[$i];
+        }
+      else
+        {
+        $hint=$hint."<li></li>".$a[$i];
+        }
+      }
+    }
+  }
+
+// 如果未找到提示，则把输出设置为 "no suggestion"
+// 否则设置为正确的值
+if ($hint == "")
+  {
+  $response="未找到相关内容，请重新输入。";
+  }
+else
+  {
+  $response=$hint;
+  }
+
+//输出响应
+echo $response;
+?>
